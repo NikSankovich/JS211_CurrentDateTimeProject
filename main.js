@@ -12,31 +12,93 @@ const displayDate = () => {
 
   document.getElementById("display-element").innerHTML = currentDate;
 }
- 
+
 
 // Write a JavaScript program to convert a number to a string.
 
+const numToString = () => {
+  //let num = 15;
+  let num = document.getElementById("num-to-str").value;
+  let text = num.toString();
+
+  document.getElementById("number").innerHTML = text;
+}
 
 
 // Write a JavaScript program to convert a string to the number.
+const strToNumber = () => {
+  let str = document.getElementById("str-to-num").value
+
+  let num = Number(str)
+
+  console.log(`This is a ${typeof num}`)
+
+  document.getElementById("results").innerHTML = num;
+}
 
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
-  // * Boolean
-  // * Null
-  // * Undefined
-  // * Number
-  // * NaN
-  // * String
-  
+// * Boolean
+// * Null
+// * Undefined
+// * Number
+// * NaN
+// * String
 
-  
+const findTypeOf = () => {
+  let a = true;
+  let b = null;
+  let c;
+  let d = 32;
+
+  let e = isNaN("Hello");
+  if (e == true) {
+    e = "e is a NaN"
+  }
+
+  f = "Hello";
+
+  let h2 = document.getElementById("practice");
+
+  let html = `<p> a is a${typeof a} </p>
+              <p> b is an object set to null</p>
+              <p> c is a ${typeof c} </p>
+              <p> d is a ${typeof d} </p>
+              <p>${e} </p>
+              <p> f is a ${typeof f} </p>`;
+  h2.insertAdjacentHTML("afterend", html);
+
+};
 // Write a JavaScript program that adds 2 numbers together.
 
+const addTwoNums = () => {
+
+  let numOne = document.getElementById("num1").valueAsNumber
+  let numTwo = document.getElementById("num2").valueAsNumber
+
+  sum = numOne + numTwo
+
+  document.getElementById("sum-of-numbers").innerHTML = sum
+}
 
 
 // Write a JavaScript program that runs only when 2 things are true.
+
+const bothTrue = () => {
+  let age = parseInt(document.getElementById("age").value)
+  let hasMoney = (document.getElementById("money").checked)
+
+  if (age > 18 && hasMoney) {
+    document.getElementById("gets-a-place").innerHTML = "Get your own place"
+  }
+  else if (age > 18 || hasMoney) {
+    document.getElementById("gets-a-place").innerHTML = "live with friends"
+  }
+  else {
+    document.getElementById("gets-a-place").innerHTML = "live at home"
+  }
+}
 
 
 

@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script src="main.js"></script>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <hr/>
-    <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
-    <hr/>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <h1>Hello World!</h1>
+  <hr />
+  <div id="display-element"></div>
+  <button onclick="displayDate()">Click Me</button>
+  <hr />
+
+  <h2>Number to String</h2>
+  <div id="number"></div>
+  <label for="num-to-str">Enter a number</label>
+  <input type="number" name="num-to-str" id="num-to-str">
+  <button onclick="numToString()">Click Me</button>
+  <hr />
+
+  <h2>String to Number</h2>
+  <div id="results"></div>
+  <label for="str-to-num">Enter a number</label>
+  <input type="text" name="str-to-num" id="str-to-num">
+  <button onclick="strToNumber()">Click Me</button>
+  <hr />
+
+  <h2 id="practice">Typeof Practice</h2>
+  <button onclick="findTypeOf()">Click Me</button>
+  <hr />
+
+  <h2>Add Two Numbers</h2>
+  <label for="num1">Enter first number</label>
+  <input type="number" name="num1" id="num1">
+
+  <label for="num2">Enter second number</label>
+  <input type="number" name="num2" id="num2">
+  <button onclick="addTwoNums()">Click Me</button>
+  <div id="sum-of-numbers"></div>
+  <hr />
+  <h2>Are you over 18 and have money?</h2>
+  <!-- <button onclick="bothTrue()">Both True</button> -->
+  <label for="age">Age</label>
+  <input type="text" name="age" id="age">
+  <label for="money">Do you have money?</label>
+  <input type="checkbox" name="money" id="money">
+  <button onclick="bothTrue()">Click Me</button>
+  <div id="gets-a-place"> </div>
+  <!-- <h2>Is one thing true?</h2> -->
+  <!-- <button onclick="bothTrue()">One True</button> -->
+  <!-- <h2>Are both things false?</h2> -->
+  <!-- <button onclick="bothTrue()">Both False</button> -->
+</body>
+
 </html>
